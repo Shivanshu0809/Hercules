@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;200&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,600;0,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: public sans,sans-serif;
+    /* background-color: black;
+    color: #fff;
+   */
+    
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 2rem;
+    box-shadow: 0px 0px 5px black;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 100;
+}
+.navprt2{
+    display: flex;
+    gap: 30px;
+    
+}
+.navprt2>a{
+    text-decoration: none;
+    color: black;
+    font-weight:600;
+    transition: all .2s ease-in-out;
+    text-transform: uppercase;
+}
+.navprt2>a:hover{
+  margin-top: -3%;
+   
+}
+.navprt3{
+    display: flex;
+    gap: 20px;
+}
+.navprt3>button{
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    border: none;
+}
+.navprt3>.btn1{
+    background-color: green;
+    color: aliceblue;
+    font-weight: bold;
+}
+.navprt3>.btn2{
+    background-color: rgb(227, 50, 50);
+    color: #fff;
+    font-weight: bold;
+    
+}
+.navprt3>input{
+    background-color: #cbcbcb;
+    border: none;
+    padding: 0 1rem;
+    outline: none;
+}
+.hero{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+    height: 100vh;
+    align-items: center;
+}
+.heading{
+    position: absolute;
+    font-size: 8.6rem;
+    z-index: -1;
+    top: 0;
+}
+.heading>h1{
+    color: #cbcbcb5e;
+}
+.heroprt1>img{
+    width: 50vw;
+}
+.heroprt2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-right: 2%;
+}
+.heroprt2>h1{
+    font-size: 4rem;
+}
+.heroprt2>p{
+    font-size: 3rem;
+    color: #cbcbcb;
+    font-weight: 600;
+}
+.descriptionSec{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    height: 120vh;
+}
+.headPrt{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.headPrt>p{
+    border: 1px solid rgb(255, 255, 255);
+    padding: 1rem 5rem;
+    color: #fff;
+    text-transform: uppercase;
+    
+}
+.headPrt>.spe{
+    background-color: rgb(119, 167, 46);
+    color: black;
+    font-weight: bold;
+}
+.specification{
+    display: flex;
+    color: #fff;
+    justify-content: space-around;
+}
+.leftpartspecification,.rightpartspecification{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 5%;
+
+}
+.specifi{
+    display: flex;
+  width: 25vw;
+  justify-content: space-between;
+ 
+}
+.specifi>p{
+  font-weight: bold;
+  color: #cbcbcb;
+   
+}
+.specifi>span{
+ width: 11vw;
+}
+.sec3{
+    position: relative;
+    background-color: black;
+    height: 120vh;
+    z-index: 10;
+
+}
+.Head>h1{
+    color:#cbcbcb;
+    text-align: center;
+    font-size: 10rem;
+   text-shadow: 0px 0px 10px whitesmoke;
+    position: absolute;
+    z-index: -1;
+    margin-left: 5%;
+
+}
+.cycleImg>img{
+    position:absolute;
+    width:50vw;
+   
+}
+.cycleImg>h2{
+    color: #fff;
+    text-align: center;
+    font-size: 8rem;
+    position: absolute;
+    right: 20%;
+    top: 60%;
+    z-index: -1;
+    text-shadow: 0px 0px 30px rgba(255, 60, 0, 0.608);
+}
+.cycleImg>.img1{
+    top: 8%;
+    rotate: 20deg;
+    left: -10%;
+}
+.cycleImg>.img2{
+    right: 4%;
+    top: 10%;
+    rotate: 340deg;
+   
+}
+
+.cycleImg>.img3{
+    top: 40%;
+    z-index: -1;
+    left: 35%;
+    width: 20vw;
+    rotate: -20deg;
+  
+}
+
+
+.cycleImg>.img4{
+    width: 20vw;
+    top: -18%;
+    right:6%;
+    animation: cycle 5s;
+    animation-iteration-count: infinite;
+    /* animation-direction:alternate-reverse; */
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+@keyframes cycle{
+    0%{
+        right: 100%;
+    }
+    10%{
+        right: 90%;
+    }
+    20%{
+        right: 80%;
+    }
+    30%{
+        right: 70%;
+    }
+    40%{
+        right: 60%;
+    }
+    50%{
+        right: 50%;
+    }
+    60%{
+        right: 40%;
+    }
+    70%{
+        right: 30%;
+    }
+    80%{
+        right: 20%;
+    }
+    90%{
+        right: 10%;
+    }
+    100%{
+        right: 0%;
+        
+    }
+}
+footer{
+    background-color: black;
+    height: 10vh;
+}
+.copyright>h2{
+    color: #9c9c9c6e;
+    text-align: center;
+}
